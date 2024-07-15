@@ -1,0 +1,591 @@
+/* start global */
+/* start global */
+:root {
+  --main-color: rgb(255, 255, 255);
+  --main-secndry-color: rgb(78, 78, 78);
+  --main-before-color: rgb(0, 120, 255);
+  --main-before-color2: rgb(0, 0, 0);
+  --main-hover-color: #cde1f8;
+  --main-back-color-i: rgb(244, 244, 244);
+  --main-color-p: rgb(116, 129, 130);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f5f5f5;
+}
+.f-weight {
+  font-weight: 800;
+}
+
+.i-shape {
+  color: black;
+  font-size: 2rem;
+  padding: 1.5rem 1.5rem;
+  background-color: var(--main-back-color-i);
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  transition: all ease-in-out 0.5s;
+}
+img {
+  width: 100%;
+}
+
+/* end global */
+
+/* start nav  */
+nav {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../imgs/bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.navbar-brand,
+.nav-link,
+nav .nav-link.show,
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--main-color);
+  --bs-navbar-active-color: var(--main-color);
+  --bs-emphasis-color-rgb: var(--main-color);
+}
+.logo-style {
+  letter-spacing: 0.063rem;
+}
+.navbar-brand:focus,
+.navbar-brand:hover {
+  color: var(--main-color);
+}
+nav ul li {
+  padding-right: 2rem;
+}
+/* end nav  */
+/* start header section */
+/* header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../imgs/bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 6rem;
+  .h1-size {
+    font-size: 4.5rem;
+  }
+  .h2-size {
+    font-size: 2.75rem;
+  }
+  .h2-size span {
+    opacity: 0.9;
+  }
+  .icons i {
+    margin-left: 0.3rem;
+    font-size: 0.875rem;
+    padding: 0.75rem 0.9rem;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+} */
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../imgs/bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 6rem;
+}
+
+header h2 {
+  transition: all ease-in-out 2s;
+}
+
+.h1-size {
+  font-size: 4.5rem;
+}
+
+.h2-size {
+  font-size: 2.75rem;
+}
+
+.h2-size span {
+  opacity: 0.9;
+}
+
+.h2-size::after {
+  content: ""; /* Initial content */
+  display: inline-block;
+  animation: changeContent 3s infinite ; /* Adjust timing as needed */
+}
+
+@keyframes changeContent {
+  0% {
+    content: "D |";
+  }
+  2% {
+    content: "De |";
+  }
+  4% {
+    content: "Dev |";
+  }
+  6% {
+    content: "Deve |";
+  }
+  8% {
+    content: "Devel |";
+  }
+  10% {
+    content: "Develo |";
+  }
+  12% {
+    content: "Develop |";
+  }
+  14% {
+    content: "Develope |";
+  }
+  16% {
+    content: "Developer |";
+  }
+  18% {
+    content: " |";
+  }
+  20% {
+    content: "Develope |";
+  }
+  22% {
+    content: "Develop |";
+  }
+  24% {
+    content: "Develo |";
+  }
+  26% {
+    content: "Devel |";
+  }
+  28% {
+    content: "Deve |";
+  }
+  30% {
+    content: "Dev |";
+  }
+  32% {
+    content: "De |";
+  }
+  34% {
+    content: "D |";
+  }
+  36% {
+    content: "De |";
+  }
+  38% {
+    content: "Des |";
+  }
+  40% {
+    content: "Desi |";
+  }
+  42% {
+    content: "Desig |";
+  }
+  44% {
+    content: "Design |";
+  }
+  46% {
+    content: "Designe |";
+  }
+  48% {
+    content: "Designer |";
+  }
+  50% {
+    content: "Designr |";
+  }
+  52% {
+    content: "Design |";
+  }
+  54% {
+    content: "Desig |";
+  }
+  56% {
+    content: "Desi |";
+  }
+  58% {
+    content: "Des |";
+  }
+  60% {
+    content: "De |";
+  }
+  62% {
+    content: "D |";
+  }
+}
+
+.h2-size::after {
+  content: " |"; /* Start with the final content */
+  display: inline-block;
+  animation: typeWriter 3s steps(15) infinite; /* Adjust timing and steps as needed */
+}
+
+@keyframes typeWriter {
+  0% {
+    content: "D |";
+  }
+  5% {
+    content: "De |";
+  }
+  10% {
+    content: "Dev |";
+  }
+  15% {
+    content: "Deve |";
+  }
+  20% {
+    content: "Devel |";
+  }
+  25% {
+    content: "Develop |";
+  }
+  30% {
+    content: "Develope |";
+  }
+  35% {
+    content: "Developer |";
+  }
+  40% {
+    content: "Developer |";
+  }
+  45% {
+    content: "Design |";
+  }
+  50% {
+    content: "Designe |";
+  }
+  55% {
+    content: "Designr |";
+  }
+  60% {
+    content: "Designr |";
+  }
+  65% {
+    content: "Design |";
+  }
+  70% {
+    content: "Desig |";
+  }
+  75% {
+    content: "Desi |";
+  }
+  80% {
+    content: "Des |";
+  }
+  85% {
+    content: "De |";
+  }
+  90% {
+    content: "D |";
+  }
+}
+
+
+.icons i {
+  margin-left: 0.3rem;
+  font-size: 0.875rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+}
+/* end header section */
+
+/* start about section */
+.progress,
+.progress-stacked {
+  height: 1.5rem;
+  margin-bottom: 1rem;
+}
+.btn-bg {
+  background: #1c1c1c;
+  color: #eee;
+  transition: all 0.5s;
+}
+.btn-bg:hover {
+  background-color: transparent;
+  color: black;
+  border: 0.063rem solid black;
+}
+.btn-bg2 {
+  background-color: var(--white);
+  color: black;
+  border: 0.063rem solid black;
+  transition: all 0.5s;
+}
+.btn-bg2:hover {
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+.pr {
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  margin-bottom: 1.25rem;
+}
+.pr2 {
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.938rem;
+  color: #748182;
+}
+.jerry {
+  font-weight: 700;
+}
+.font1 {
+  font-weight: 800;
+  margin-bottom: 0.313rem;
+}
+
+.img-edit {
+  padding: 0 0 0 1.875rem;
+  position: relative;
+}
+.img-edit:after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 0;
+  bottom: -1.875rem;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+.image-pos {
+  margin-left: 2.5rem;
+  margin-top: -2.5rem;
+}
+
+/* Start Service Section */
+.content-title h2 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  position: relative;
+  display: inline-block;
+  z-index: 4;
+}
+.content-title h2::after {
+  content: "";
+  width: 100%;
+  height: 1.9rem;
+  background-image: url("../imgs/dots.png");
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -0.3rem;
+  left: 0;
+  z-index: -1;
+}
+.card-content {
+  background-color: var(--main-color);
+}
+.card-content:hover i {
+  background-color: var(--main-before-color2);
+  color: white;
+}
+.card-content p {
+  font-size: 0.8rem;
+}
+
+/* End Service Section */
+
+/* Start Section Portfolio */
+/* .Portfolio .nav-link {
+  color: var(--main-before-color2);
+} */
+.works .carousel-indicators {
+  top: -6%;
+}
+.works .carousel-indicators [data-bs-target] {
+  box-sizing: inherit;
+  text-indent: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+    color: #222;
+    font-weight: 700;
+    font-size: 1rem;
+
+}
+.Portfolio-social {
+  width: 50%;
+  height: 50%;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.Portfolio-items:hover .Portfolio-social {
+  opacity: 1;
+  width: 96%;
+  height: 96%;
+  top: 2%;
+  left: 2%;
+  right: 2%;
+  bottom: 2%;
+}
+.Portfolio-img img {
+  transition: all 0.4s ease-in-out;
+}
+.Portfolio-social .i-shape {
+  color: white;
+  font-size: .5rem;
+  padding: 1rem 1rem;
+  background-color: black;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  transition: all ease-in-out 0.3s;
+}
+.Portfolio-social i:hover {
+  background-color: white;
+  color: black;
+  border: solid 0.125rem black;
+  border-radius: 50%;
+}
+.Portfolio-social p {
+  margin-top: 6rem;
+}
+/* End Section Portfolio */
+
+/* Start Section Slider */
+
+.img-clients img {
+  width: 5.625rem;
+  height: 5.625rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 0.938rem;
+}
+.clients-text p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: var(--main-color-p);
+}
+.clients-text h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.clients-text h6 {
+  font-weight: 600;
+  color: #888;
+}
+/* End Section Slider */
+
+/*  Start Counter Section */
+.summary-info {
+  padding: 8rem 0;
+  background-color: white;
+}
+.summary-info .i-shape-counter {
+  color: black;
+  font-size: 2rem;
+  padding: 1rem 1rem;
+}
+.summary-info-content {
+  color: black;
+}
+.summary-info-content h3 {
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.summary-info-content span {
+  font-weight: 600;
+  color: var(--main-color-p);
+}
+.content-items:hover i {
+  background-color: var(--main-before-color2);
+  color: white;
+}
+
+/* End Counter Section */
+
+/*  Start Section Team  */
+.team-social {
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+  opacity: 0;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+  transition: all 0.5s ease;
+}
+.team-items:hover .team-social {
+  opacity: 1;
+  width: 96%;
+  height: 96%;
+  top: 2%;
+  left: 2%;
+  bottom: 0;
+  transform: rotateY(0deg) scale(1, 1);
+}
+.team-img img {
+  transition: all 0.4s ease-in-out;
+}
+.team-img img:hover {
+  transform: scale(1.2);
+}
+.team-info {
+  background-color: rgba(52, 52, 52, 0.8);
+  color: #fff;
+}
+.team-social .i-shape {
+  color: white;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  background-color: black;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  transition: all ease-in-out 0.3s;
+}
+.team-social i:hover {
+  background-color: white;
+  color: black;
+  border: solid 0.125rem black;
+  border-radius: 50%;
+}
+
+/*  End Section Team  */
+
+/* Start Section Contact */
+.content-items:hover i {
+  background-color: var(--main-before-color2);
+  color: white;
+}
+.content-items p {
+  color: var(--main-color-p);
+}
+.contact-input input {
+  border: 0;
+  border-radius: 0.35rem;
+  padding: 0.6rem;
+  background: var(--main-back-color-i);
+}
+.contact-input textarea {
+  min-height: 10rem;
+  min-width: 100%;
+  border: 0;
+  border-radius: 0.35rem;
+  padding: 0.6rem;
+  background: var(--main-back-color-i);
+}
+/* End Section Contact */
+
+/* Start Footer  */
+footer {
+  background-color: rgb(28, 28, 28);
+}
+
+footer p {
+  font-size: 0.9rem;
+  word-spacing: 0.12.5rem;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #748182;
+}
+
+/* End Footer */
